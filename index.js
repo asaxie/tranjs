@@ -5,7 +5,7 @@ const qs = require('qs');
 (async () => {
     console.log("----------start---------")
     const workbook = new Excel.Workbook();
-    let data = await workbook.xlsx.readFile("safp.xlsx");
+    let data = await workbook.xlsx.readFile("test.xlsx");
 
     workbook.eachSheet( (worksheet, sheetId)=> {
 
