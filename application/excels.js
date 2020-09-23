@@ -47,10 +47,11 @@ export default class ExcelsUtils {
 
         keys.map((item,index)=>{
             let value = data[item]
+            console.log("valuevaluevalue",value)
             worksheet.getCell("A"+(index+2)).value = index
             worksheet.getCell("B"+(index+2)).value = value?value:""
+            worksheet.commit();
         })
-
         await workbook.xlsx.writeFile("output/excel/tran.xlsx")
     }
 }
