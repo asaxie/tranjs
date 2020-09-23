@@ -12,6 +12,8 @@ import IOSUtils from "./application/ios";
     console.log("----------start creat android---------")
 
     let androidData = await AndroidUtils.stringsXml()
+    let outputExcel = await ExcelsUtils.outputExcel(androidData)
+
     AndroidUtils.creatStringsXML(androidData,excelsData)
 
     console.log("----------END creat android-----------")
