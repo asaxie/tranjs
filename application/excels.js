@@ -27,7 +27,11 @@ export default class ExcelsUtils {
 
             resolve(data)
         })
+    }
 
+    static async outputExcel(data){
+        return new Promise((resolve, reject) => {
 
+        })
     }
 }
