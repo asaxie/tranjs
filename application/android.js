@@ -36,17 +36,30 @@ export default class AndroidUtils {
         let inputEnRes = androidStart
         let inputPtRes = androidStart
 
+        let hasKeys = []
+
         keys.map((key,index)=>{
             let value = init[key]
 
              for (let t in tran){
                  if (tran[t].zh == value) {
-                     inputEnRes +=`<string name=\"${key}\">${tran[t].en}</string>\n`
-                     inputPtRes +=`<string name=\"${key}\">${tran[t].pt}</string>\n`
+                     hasKeys.push(key)
+                     inputEnRes +=`    <string name=\"${key}\">${tran[t].en}</string>\n`
+                     inputPtRes +=`    <string name=\"${key}\">${tran[t].pt}</string>\n`
                      break
                  }
              }
 
+        })
+
+        inputPtRes +="\n    <!--未翻譯的-->\n"
+        inputEnRes +="\n    <!--未翻譯的-->\n"
+        //拼接未翻譯的
+        keys.map((key,index)=>{
+            if (hasKeys.indexOf(key)  == -1) {
+                inputEnRes +=`    <string name=\"${key}\">${init[key]}</string>\n`
+                inputPtRes +=`    <string name=\"${key}\">${init[key]}</string>\n`
+            }
         })
 
         inputEnRes +=androidEnd
