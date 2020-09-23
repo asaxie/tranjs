@@ -1,0 +1,34 @@
+/*
+  Localizable.strings
+  IAMFriend
+
+  Created by Jason on 2019/3/28.
+  Copyright © 2019 Metaarchit. All rights reserved.
+*/
+
+Cancel = "取消";
+Confirm = "確定";
+Close = "關閉";
+Back = "返回";
+Retry = "重試";
+
+WebviewPageError = "無法加載;頁面！";
+
+ZH_Confirm = "確認";
+EN_Confirm = "Confirm";
+PT_Confirm = "Confirmação";
+
+Install = "安裝";
+Return = "返回";
+InstallMPay = "請安裝MPay澳門錢包！";
+
+PayParamError = "支付參數有誤！";
+PayRequestError = "請求支付失敗，請重新支付！";
+PaySuccess = "支付成功！";
+PayError = "支付失敗！";
+NoSuchOrder = "沒有此訂單！";
+FailureOrder = "訂單已失效！";
+
+AppUpgradeTips = "更新提示";
+AppUpgradeLatestVersion = "當前版本已經是最新！";
+AppUpgradeMessage = "發現新版本手機程式，請下載更新！";
