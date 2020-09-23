@@ -10,7 +10,7 @@ export default class AndroidUtils {
 
     static stringsXml() {
         return new Promise(((resolve, reject) => {
-            xml.parseFile("strings.xml", (error, data) => {
+            xml.parseFile("./input/strings.xml", (error, data) => {
                 if (error) {
                     reject(error)
                     console.log("error", error)
@@ -53,13 +53,13 @@ export default class AndroidUtils {
         inputPtRes +=androidEnd
 
 
-        fs.writeFile("input/en/strings.xml",inputEnRes,{},(err => {
+        fs.writeFile("./output/en/strings.xml",inputEnRes,{},(err => {
             if (err){
                 console.log("error",err)
             }
         }))
 
-        fs.writeFile("input/pt/strings.xml",inputPtRes,{},(err => {
+        fs.writeFile("./output/pt/strings.xml",inputPtRes,{},(err => {
             if (err){
                 console.log("error",err)
             }

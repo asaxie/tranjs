@@ -1,10 +1,10 @@
-import AndroidUtils from "./android";
-import ExcelsUtils from "./excels";
+import AndroidUtils from "./application/android";
+import ExcelsUtils from "./application/excels";
 
-var test = (async () => {
+ (async () => {
     console.log("----------start creat android---------")
 
-    let excelsData  = await ExcelsUtils.readExcel("test.xlsx")
+    let excelsData  = await ExcelsUtils.readExcel("input/test.xlsx")
     let androidData = await AndroidUtils.stringsXml()
     AndroidUtils.creatStringsXML(androidData,excelsData)
 
