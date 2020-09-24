@@ -50,7 +50,7 @@ export default class ExcelsUtils {
             console.log("valuevaluevalue",value)
             worksheet.getCell("A"+(index+2)).value = index
             worksheet.getCell("B"+(index+2)).value = value?value:""
-            worksheet.commit();
+            // worksheet.commit();
         })
         await workbook.xlsx.writeFile("output/excel/tran.xlsx")
     }
