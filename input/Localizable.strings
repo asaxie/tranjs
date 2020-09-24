@@ -20,7 +20,7 @@ PT_Confirm = "Confirmação";
 
 Install = "安裝";
 Return = "返回";
-InstallMPay = "請安裝MPay澳門錢包！";
+InstallMPay = "請安裝MPay澳門錢包！;\n";
 
 PayParamError = "支付參數有誤！";
 PayRequestError = "請求支付失敗，請重新支付！";

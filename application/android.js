@@ -8,9 +8,9 @@ const androidEnd = "</resources>"
 
 export default class AndroidUtils {
 
-    static stringsXml() {
+    static stringsXml(path = "./input/strings.xml") {
         return new Promise(((resolve, reject) => {
-            xml.parseFile("./input/strings.xml", (error, data) => {
+            xml.parseFile(path, (error, data) => {
                 if (error) {
                     reject(error)
                     console.log("error", error)
@@ -28,53 +28,67 @@ export default class AndroidUtils {
     }
 
 
-
-    static creatStringsXML(init,tran){
+    static creatStringsXML(init, tran) {
 
         let keys = Object.keys(init)
 
         let inputEnRes = androidStart
         let inputPtRes = androidStart
+        let inputZhRes = androidStart
 
         let hasKeys = []
 
-        keys.map((key,index)=>{
+
+        keys.map((key, index) => {
             let value = init[key]
 
-             for (let t in tran){
-                 if (tran[t].zh == value) {
-                     hasKeys.push(key)
-                     inputEnRes +=`    <string name=\"${key}\">${tran[t].en}</string>\n`
-                     inputPtRes +=`    <string name=\"${key}\">${tran[t].pt}</string>\n`
-                     break
-                 }
-             }
+            for (let t in tran) {
+
+                if (tran[t].zh == value) {
+
+                    if (tran[t].zhNew) {
+                        inputZhRes += `    <string name=\"${key}\">${tran[t].zhNew}</string>\n`
+                    }
+
+                    hasKeys.push(key)
+                    inputEnRes += `    <string name=\"${key}\">${tran[t].en}</string>\n`
+                    inputPtRes += `    <string name=\"${key}\">${tran[t].pt}</string>\n`
+                    break
+                }
+            }
 
         })
 
-        inputPtRes +="\n    <!--未翻譯的-->\n"
-        inputEnRes +="\n    <!--未翻譯的-->\n"
+        inputPtRes += "\n    <!--未翻譯的-->\n"
+        inputEnRes += "\n    <!--未翻譯的-->\n"
         //拼接未翻譯的
-        keys.map((key,index)=>{
-            if (hasKeys.indexOf(key)  == -1) {
-                inputEnRes +=`    <string name=\"${key}\">${init[key]}</string>\n`
-                inputPtRes +=`    <string name=\"${key}\">${init[key]}</string>\n`
+        keys.map((key, index) => {
+            if (hasKeys.indexOf(key) == -1) {
+                inputEnRes += `    <string name=\"${key}\">${init[key]}</string>\n`
+                inputPtRes += `    <string name=\"${key}\">${init[key]}</string>\n`
             }
         })
 
-        inputEnRes +=androidEnd
-        inputPtRes +=androidEnd
+        inputEnRes += androidEnd
+        inputPtRes += androidEnd
+        inputZhRes += androidEnd
 
 
-        fs.writeFile("./output/en/strings.xml",inputEnRes,{},(err => {
-            if (err){
-                console.log("error",err)
+        fs.writeFile("./output/en/strings.xml", inputEnRes, {}, (err => {
+            if (err) {
+                console.log("error", err)
             }
         }))
 
-        fs.writeFile("./output/pt/strings.xml",inputPtRes,{},(err => {
-            if (err){
-                console.log("error",err)
+        fs.writeFile("./output/pt/strings.xml", inputPtRes, {}, (err => {
+            if (err) {
+                console.log("error", err)
+            }
+        }))
+
+        fs.writeFile("./output/zh/strings.xml", inputZhRes, {}, (err => {
+            if (err) {
+                console.log("error", err)
             }
         }))
 
