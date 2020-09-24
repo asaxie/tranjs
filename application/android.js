@@ -8,9 +8,9 @@ const androidEnd = "</resources>"
 
 export default class AndroidUtils {
 
-    static stringsXml(path = "./input/strings.xml") {
+    static stringsXml(name = "strings") {
         return new Promise(((resolve, reject) => {
-            xml.parseFile(path, (error, data) => {
+            xml.parseFile(`./input/${name}.xml`, (error, data) => {
                 if (error) {
                     reject(error)
                     console.log("error", error)
@@ -27,8 +27,11 @@ export default class AndroidUtils {
         }))
     }
 
+    static creatString(key, value){
+        return `    <string name=\"${key}\">${value}</string>\n`
+    }
 
-    static creatStringsXML(init, tran) {
+    static creatStringsXML(init, tran,name = "strings") {
 
         let keys = Object.keys(init)
 
@@ -47,12 +50,16 @@ export default class AndroidUtils {
                 if (tran[t].zh == value) {
 
                     if (tran[t].zhNew) {
-                        inputZhRes += `    <string name=\"${key}\">${tran[t].zhNew}</string>\n`
+                        inputZhRes += this.creatString(key,tran[t].zhNew)
+                    }else {
+                        inputZhRes += this.creatString(key,tran[t].zh)
                     }
 
                     hasKeys.push(key)
-                    inputEnRes += `    <string name=\"${key}\">${tran[t].en}</string>\n`
-                    inputPtRes += `    <string name=\"${key}\">${tran[t].pt}</string>\n`
+
+
+                    inputEnRes += this.creatString(key,tran[t].en)
+                    inputPtRes += this.creatString(key,tran[t].pt)
                     break
                 }
             }
@@ -61,11 +68,13 @@ export default class AndroidUtils {
 
         inputPtRes += "\n    <!--未翻譯的-->\n"
         inputEnRes += "\n    <!--未翻譯的-->\n"
+        inputZhRes += "\n<!--未翻譯的-->\n"
         //拼接未翻譯的
         keys.map((key, index) => {
             if (hasKeys.indexOf(key) == -1) {
-                inputEnRes += `    <string name=\"${key}\">${init[key]}</string>\n`
-                inputPtRes += `    <string name=\"${key}\">${init[key]}</string>\n`
+                inputEnRes += this.creatString(key,init[key])
+                inputPtRes += this.creatString(key,init[key])
+                inputZhRes += this.creatString(key,init[key])
             }
         })
 
@@ -74,19 +83,19 @@ export default class AndroidUtils {
         inputZhRes += androidEnd
 
 
-        fs.writeFile("./output/en/strings.xml", inputEnRes, {}, (err => {
+        fs.writeFile(`./output/en/${name}.xml`, inputEnRes, {}, (err => {
             if (err) {
                 console.log("error", err)
             }
         }))
 
-        fs.writeFile("./output/pt/strings.xml", inputPtRes, {}, (err => {
+        fs.writeFile(`./output/pt/${name}.xml`, inputPtRes, {}, (err => {
             if (err) {
                 console.log("error", err)
             }
         }))
 
-        fs.writeFile("./output/zh/strings.xml", inputZhRes, {}, (err => {
+        fs.writeFile(`./output/zh/${name}.xml`, inputZhRes, {}, (err => {
             if (err) {
                 console.log("error", err)
             }

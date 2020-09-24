@@ -38,4 +38,81 @@ export default class IOSUtils {
 
         })
     }
+
+    static creatLocalizable(init,tran,name = "Localizable"){
+        console.log("IOS 開始生成")
+
+        let keys = Object.keys(init)
+
+        let inputEnRes = ""
+        let inputPtRes = ""
+        let inputZhRes = ""
+
+        let hasKeys = []
+
+
+        keys.map((key, index) => {
+            let value = init[key]
+
+            for (let t in tran) {
+
+                if (tran[t].zh == value) {
+
+                    if (tran[t].zhNew) {
+                        inputZhRes += `${key} = "${tran[t].zhNew}"\n`
+                    }else {
+                        inputZhRes += `${key} = "${tran[t].zh}"\n`
+                    }
+
+                    hasKeys.push(key)
+                    inputEnRes += `${key} = "${tran[t].en}"\n`
+                    inputPtRes += `${key} = "${tran[t].pt}"\n`
+
+                    break
+                }
+            }
+
+        })
+
+        inputPtRes += "\n<!--未翻譯的-->\n"
+        inputEnRes += "\n<!--未翻譯的-->\n"
+        inputZhRes += "\n<!--未翻譯的-->\n"
+        //拼接未翻譯的
+        keys.map((key, index) => {
+            if (hasKeys.indexOf(key) == -1) {
+                inputEnRes += `${key} = "${init[key]}"\n`
+                inputPtRes += `${key} = "${init[key]}"\n`
+                inputZhRes += `${key} = "${init[key]}"\n`
+            }
+        })
+
+
+
+        fs.writeFile(`./output/en/${name}.strings`, inputEnRes, {}, (err => {
+            if (err) {
+                console.log("IOS EN 生成失敗", err)
+            }else {
+                console.log("IOS EN 生成成功")
+            }
+        }))
+
+        fs.writeFile(`./output/pt/${name}.strings`, inputPtRes, {}, (err => {
+            if (err) {
+                console.log("IOS PT 生成失敗", err)
+            }else {
+                console.log("IOS PT 生成成功")
+
+            }
+        }))
+
+        fs.writeFile(`./output/zh/${name}.strings`, inputZhRes, {}, (err => {
+            if (err) {
+                console.log("IOS ZH 生成失敗", err)
+            }else {
+                console.log("IOS ZH 生成成功")
+            }
+        }))
+    }
+
+
 }
