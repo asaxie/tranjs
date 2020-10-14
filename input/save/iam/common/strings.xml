@@ -1,0 +1,315 @@
+<resources>
+    <string name="app_name">市政在線</string>
+
+    <string name="ok">OK</string>
+    <string name="message">提示</string>
+    <string name="confirm">確定</string>
+    <string name="cancel">取消</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="done">完成</string>
+    <string name="allow">允許</string>
+    <string name="reject">拒絕</string>
+    <string name="retry">重試</string>
+    <string name="close">關閉</string>
+    <string name="delete">刪除</string>
+    <string name="loading">加載中....</string>
+    <string name="processing">處理中....</string>
+    <string name="not_prompt">不再提示</string>
+    <string name="empty_page">沒有數據</string>
+    <string name="empty_page_click">沒有數據，請點擊重新加載</string>
+    <string name="network_error">網絡連接錯誤，請檢查網絡！</string>
+    <string name="clickLoadMore">點擊加載更多</string>
+
+    <string name="go_allow">前往開啟</string>
+    <string name="exit_tip">再按一次退出！</string>
+    <string name="confirm_exit_tip">確認退出？</string>
+
+    <string name="nav_home">首頁</string>
+    <string name="nav_message">訊息</string>
+    <string name="nav_mine">我的</string>
+    <string name="nav_setting">設定</string>
+
+    <string name="action_read">全部已讀</string>
+    <string name="action_edit">編輯</string>
+    <string name="action_save">儲存</string>
+
+    <string name="category_manager">常用管理</string>
+    <string name="category_favorite">我常用的</string>
+    <string name="category_all">全部</string>
+    <string name="home_favorite">常用</string>
+    <string name="home_employee">員工</string>
+    <string name="home_max_add_app">最多可添加%1$d個常用應用</string>
+
+    <!-- setting -->
+    <string name="setting_language">語言</string>
+    <string name="setting_push">接收推送消息</string>
+    <string name="setting_set_language">設置語言</string>
+    <string name="setting_switching_language">正在切換語言....</string>
+    <string name="setting_team">使用條款</string>
+    <string name="setting_read_agree_team">閱讀並同意條款</string>
+    <string name="setting_privacy">私隱政策</string>
+    <string name="setting_disclaimer">免責聲明</string>
+    <string name="setting_copyright">版權宣告</string>
+    <string name="setting_about">關於</string>
+    <string name="setting_sound">聲音</string>
+    <string name="setting_current_version">當前版本</string>
+    <string name="setting_check_version">檢查新版本</string>
+    <string name="setting_receive_all">全部接收</string>
+
+    <!--personal-->
+    <string name="personal_service">個人信息</string>
+    <string name="personal_avatar">頭像</string>
+    <string name="personal_chinese_name">中文名稱</string>
+    <string name="personal_pt_name">葡文名稱</string>
+    <string name="personal_mobile">電話</string>
+    <string name="personal_email">電郵</string>
+
+    <!-- 信息 -->
+    <string name="message_open_settings">App接收推送訊息受限，請到設置頁面設置，否則將無法收到推送訊息內容。</string>
+    <string name="message_topic">推廣訊息</string>
+    <string name="message_person">個人通知</string>
+    <string name="message_empty">暫無訊息</string>
+    <string name="message_login_info">閣下尚未登入，請登入後查看訊息。</string>
+    <string name="message_to_delete_msg">確定刪除訊息？</string>
+    <string name="message_is_all_read">確定設置訊息全部已讀？</string>
+    <string name="message_delete_failure">訊息刪除失敗[%1$s]</string>
+    <string name="message_to_setting_subscribed">打開訂閱信息才能收到推廣訊息喔</string>
+    <string name="message_empty_topic">暫時沒有收到推廣訊息</string>
+    <string name="message_empty_personal">暫時沒有收到個人通知</string>
+
+    <!-- IAMFriends -->
+    <string name="iamfriends_card">市政之友會員卡</string>
+    <string name="iamfriends_bindcard">綁定市政之友會員卡</string>
+    <string name="iamfriends_idtype">類別</string>
+    <string name="iamfriends_idcode">編號</string>
+    <string name="iamfriends_terms_of"><DATA><![CDATA[同意<font color="#0d7bff"><a href="terms">使用條款</a></font>及<font color="#0d7bff"><a href="privacy">隱私政策</a></font>]]></DATA></string>
+    <string name="iamfriends_terms_tip">閱讀並同意使用條款</string>
+    <string name="iamfriends_register_mobile">已登記的流動電話</string>
+    <string name="iamfriends_register_code">輸入驗證碼</string>
+    <string name="iamfriends_getcode">獲取驗證碼</string>
+    <string name="iamfriends_getcode_remain">剩餘%1$s秒</string>
+    <string name="iamfriends_register_idtype_required">請選擇類別</string>
+    <string name="iamfriends_register_id_error">請輸入正確編號</string>
+    <string name="iamfriends_register_phone_required">手機號碼不能為空</string>
+    <string name="iamfriends_register_phone_error">手機號碼格式錯誤</string>
+    <string name="iamfriends_register_code_required">驗證碼不能為空</string>
+    <string name="iamfriends_register_getcode_success">驗證碼已經發送到手機，請查看</string>
+    <string name="iamfriends_register_getcode_fail">驗證碼發送失敗</string>
+    <string name="iamfriends_register_getcode_error">驗證碼發送失敗，錯誤碼[%1$s]</string>
+    <string name="iamfriends_register_bind_success">成功綁定會員卡</string>
+    <string name="iamfriends_register_bind_fail">綁定會員卡失敗</string>
+    <string name="iamfriends_register_bind_error">綁定會員卡失敗，錯誤碼[%1$s]</string>
+    <string name="iamfriends_register_code2001">未綁定會員卡</string>
+    <string name="iamfriends_register_code2002">驗證碼驗證不通過</string>
+    <string name="iamfriends_register_code2003">驗證手機號不通過</string>
+    <string name="iamfriends_register_code2004">綁定的會員卡數量超過限制</string>
+    <string name="iamfriends_register_code2005">獲取不到會員卡信息</string>
+    <string name="iamfriends_register_code2006">獲取不到會員卡類型</string>
+    <string name="iamfriends_register_code3000">驗證碼已失效，請重新發送</string>
+    <string name="iamfriends_register_code5001">無法獲取個人資料</string>
+    <string name="iamfriends_register_code5002">獲取個人資料異常</string>
+    <string name="iamfriends_register_code5003">獲取數據錯誤</string>
+    <string name="iamfriends_register_code5004">證件類型錯誤</string>
+    <string name="iamfriends_register_code5005">證件類型驗證錯誤</string>
+    <string name="iamfriends_register_code5006">主卡多於一張</string>
+    <string name="iamfriends_register_codeOthers">服務器異常[%1$s]</string>
+    <string name="iamfriends_register_unbind_confirm">確定刪除會員卡嗎？</string>
+    <string name="iamfriends_register_unbind_success">成功刪除會員卡</string>
+    <string name="iamfriends_register_unbind_fail">刪除會員卡失敗</string>
+    <string name="iamfriends_bind">綁定</string>
+    <string name="iamfriends_idtype_message">初始化會員卡類型失敗，點擊確認重新加載（網路連結錯誤）</string>
+    <string name="iamfriends_expiryDate">有效日期：</string>
+    <string name="iamfriends_place_address">地   址:</string>
+    <string name="iamfriends_place_phone">電   話:</string>
+    <string name="iamfriends_place_center">活動中心</string>
+    <string name="iamfriends_bind_member">綁定會員</string>
+    <string name="iamfriends_switch_memeber">切換會員</string>
+    <string name="iamfriends_open_time">開放時間</string>
+    <string name="iamfriends_card_type">類別</string>
+    <string name="iamfriends_card_never_expires">永久有效</string>
+    <string name="iamfriends_card_unbind">解除綁定</string>
+    <string name="iamfriends_click_to_refresh">點擊刷新</string>
+    <string name="iamfriends_to_be_bind">根據您的一戶通帳號資料，是否綁定編號[%1$s]之市政之友會員卡?</string>
+    <string name="iamfriends_clear_all_card">是否同時清除所有市政之友會員卡綁定紀錄？</string>
+    <string name="iamfriends_clear">清除</string>
+    <string name="iamfriends_clear_failure">清除失敗</string>
+    <string name="iamfriends_clear_success">清除成功</string>
+    <string name="iamfriends_action_later">稍後決定</string>
+    <string name="iamfriends_action_immediately">是，前往解除</string>
+
+    <!-- 錯誤碼提示 -->
+    <string name="error_Error">系統發生錯誤[錯誤碼是：%1$s]，請稍候重試！</string>
+    <string name="error_Unknown">未知錯誤。</string>
+    <string name="error_ParseError">解析數據發生錯誤。</string>
+    <string name="error_NetworkError">網絡連接失敗，請檢查網絡設置。</string>
+    <string name="error_HttpError">網絡協議出錯。</string>
+    <string name="error_ResponseError">後台接口錯誤，[錯誤碼：%1$s]。</string>
+    <string name="error_SslError">服務證書出錯。</string>
+    <string name="error_Timeout">網絡超時。</string>
+    <string name="error_UnexpectedResult">返回錯誤數據。</string>
+    <string name="error_AppError">無法打開App或App未安裝。</string>
+    <string name="error_BrowserError">無法打開連結。</string>
+    <string name="error_OpenFileError">沒有找到第三方應用打開該文件[文件地址：%1$s]。</string>
+    <string name="error_Token_Invalid">登入已失效，請重新登入。</string>
+
+    <!-- App -->
+    <string name="app_notfound_message">當前應用不存在，請確認應用名稱是否正確！</string>
+    <string name="app_maintained_message">系統正在維護，請稍後重試！</string>
+    <string name="app_upgrade_message">必須更新此手機程式才能繼續使用。</string>
+    <string name="app_web_url_error">當前應用的網站地址為空白。</string>
+    <string name="app_whitelist_error">當前網站地址 [%1$s] 不在允許訪問名單內，請勿繼續訪問。</string>
+    <string name="app_react_open_error">App暫不支持React。</string>
+    <string name="app_unknow_error">應用類型有誤，暫不支持。</string>
+    <string name="app_auth_message">請先登入帳戶。</string>
+    <string name="app_verify_message">請先驗證手機號碼。</string>
+    <string name="app_forcedUpgrade_message">必須更新此手機程式才能繼續使用。</string>
+    <string name="app_appupgrade_message">此程式已經發佈新版本，請升級繼續使用。</string>
+    <string name="app_upgrade_tips">版本更新提示</string>
+    <string name="app_latest_version">已經是最新版本了！</string>
+    <string name="app_uninstalled_googleplay">請先安裝Google Play！</string>
+
+    <!-- Account -->
+    <string name="account_login">登入</string>
+    <string name="account_logout">登出</string>
+    <string name="account_login_failed">登入失敗！</string>
+    <string name="account_logout_confirm">確定登出嗎？</string>
+    <string name="account_phone_auth">手機號碼登入</string>
+    <string name="account_auth_phone">手機號碼</string>
+    <string name="account_auth_getcode">獲取驗證碼</string>
+    <string name="account_auth_getcode_remain">剩餘%1$s秒</string>
+    <string name="account_auth_getcode_success">驗證碼已經發送到手機，請查看。</string>
+    <string name="account_auth_getcode_fail">獲取驗證碼失敗</string>
+    <string name="account_auth_phone_required">手機號碼不能為空</string>
+    <string name="account_auth_phone_error">手機號碼應以6開頭的8位數字</string>
+    <string name="account_auth_code_required">驗證碼不能為空</string>
+    <string name="account_auth_code_error">驗證碼只能輸入6位數字</string>
+    <string name="account_auth_invalid">驗證碼已經失效，請重新獲取</string>
+    <string name="account_auth_code">驗證碼</string>
+    <string name="account_auth_send">發送</string>
+    <string name="account_phone_auth_success">手機驗證成功</string>
+    <string name="account_phone_auth_fail">手機驗證失敗</string>
+    <string name="account_exit_phone_auth">確定退出手機驗證嗎？</string>
+    <string name="account_exit_account_auth_confirm">App已登入，需要先退出帳戶，才能進行手機驗證！</string>
+    <string name="account_exit_phone_auth_confirm">App已驗證手機，需要先退出手機驗證，才能進行登入操作！</string>
+    <string name="account_exit_personal_confirm">App正在使用[%1$s]，需要先退出當前帳戶，才能進行登入公共服務一戶通操作！</string>
+    <string name="account_exit_prientity_confirm">App正在使用[%1$s]，需要先退出當前帳戶，才能進行登入私營實體操作！</string>
+    <string name="account_exit_pubentity_confirm">App正在使用[%1$s]，需要先退出當前帳戶，才能進行登入公共實體操作！</string>
+    <string name="account_login_clicked">點擊登入</string>
+    <string name="account_login_tips">閣下尚未登入，請登入後查看更多</string>
+    <string name="account_phone_tips">您好，歡迎使用市政在線</string>
+    <string name="account_authtype">選擇登入方式</string>
+    <string name="account_authtype_personal">澳門公共服務一戶通</string>
+    <string name="account_authtype_public">公共實體使用者帳戶</string>
+    <string name="account_authtype_private">私營實體使用者帳戶</string>
+    <string name="account_authtype_phone">手機號碼驗證使用者</string>
+    <string name="account_personal_info">您好，當前登入狀態為澳門公共服務一戶通。歡迎使用市政在線。</string>
+    <string name="account_public_info">您好，當前登入狀態為公共實體使用者帳戶。歡迎使用市政在線。</string>
+    <string name="account_private_info">您好，當前登入狀態為私營實體使用者帳戶。歡迎使用市政在線。</string>
+    <string name="account_phone_info">您好，當前登入狀態為手機號碼驗證。歡迎使用市政在線。</string>
+    <string name="account_auth_input_phone">輸入手機號碼</string>
+    <string name="account_auth_input_code">輸入驗證碼</string>
+    <!-- Webview -->
+    <string name="webview_exit_tip">確認退出當前頁面嗎？</string>
+    <string name="webview_page_error">無法加載頁面</string>
+    <string name="webview_action_share">分享</string>
+    <string name="webview_action_browser">在瀏覽器打開</string>
+    <string name="webview_action_reload">刷新</string>
+    <string name="webview_action_copylink">複製鏈接</string>
+    <string name="webview_copied_to_clipboard_format">已複製到剪貼板：\n%1$s</string>
+    <string name="webview_download_network_message">當前不是WIFI網絡，下載文件會消耗手機流量，是否確定繼續下載？</string>
+    <string name="webview_download_message">開始下載文件：[%1$s] </string>
+
+    <!-- gps -->
+    <string name="gps_message">請開啟設備的GPS以便進行定位。</string>
+    <string name="gps_permission_location">App需要讀取您的位置</string>
+    <string name="gps_permission_location_failure">App需要讀取您的位置，請前往權限頁面進行授權。</string>
+
+    <!-- pay -->
+    <string name="pay_paymentId_empty">支付ID為空，無法啟動支付。</string>
+    <string name="pay_err_status_invalid">當前訂單無法支付，請確認訂單狀態：[%1$s]</string>
+    <string name="pay_err_channel_invalid">當前訂單的支付方式無效，請確認訂單。</string>
+    <string name="pay_err_order_invalid">當前訂單無效或不存在，請確認訂單。</string>
+    <string name="pay_err_start">請求支付失敗，錯誤碼為：[%1$s]</string>
+    <string name="pay_err_query">查詢訂單失敗，錯誤碼為：[%1$s]</string>
+    <string name="pay_err_payinfo">支付信息有誤，請確認訂單的支付信息。</string>
+    <string name="pay_msg_started">當前訂單未完成支付，是否繼續進行支付？</string>
+    <string name="pay_msg_cancel">取消支付。</string>
+    <string name="pay_msg_success">當前訂單已完成支付，無需再次支付。</string>
+    <string name="pay_topay">支付</string>
+    <string name="pay_success">成功支付</string>
+    <string name="pay_return_page">返回頁面</string>
+    <string name="pay_failure">支付失敗</string>
+    <string name="pay_chose_pay">選擇支付方式</string>
+    <string name="pay_pay_up">確定支付</string>
+
+    <!-- qrcode -->
+    <string name="qrcode_scan">掃一掃</string>
+    <string name="qrcode_flash_light">輕點照亮</string>
+    <string name="qrcode_into_box">將二維碼放入框內</string>
+    <string name="qrcode_camera_error">打開照相機出錯</string>
+    <string name="qrcode_camera_permission">App需要打開您的照相機！</string>
+    <string name="qrcode_album">相冊</string>
+    <string name="qrcode_decode_fail">二維碼識別錯誤</string>
+    <string name="qrcode_result">掃描結果</string>
+
+    <!-- Voice -->
+    <string name="audio_chat_list_rec_voice_short">錄音時間太短</string>
+
+    <string name="voice_permission_record">App需要打開您的麥克風</string>
+    <string name="voice_permission_record_failure">App需要打開您的麥克風，請前往權限頁面進行授權。</string>
+
+    <string name="voice_permission_lock">App需要保持您的屏幕不鎖屏</string>
+    <string name="voice_permission_storage">App需要讀取您的語音文件</string>
+    <string name="voice_permission_failure">App需要讀取您的語音文件，請前往權限頁面進行授權。</string>
+
+    <!-- permission -->
+    <string name="permission_storage_message">App需要打開您的存儲文件權限，以存儲數據。</string>
+    <string name="permission_storage_failure">您拒絕了App存儲文件權限，請允許App打開存儲文件權限。</string>
+    <string name="permission_storage_setting">您禁止了App獲取文件權限，請前往權限頁面進行授權。</string>
+    <string name="permission_location_message">App正在請求使用您當前的位置，是否允許？</string>
+    <string name="permission_location_auth">App正在請求使用您當前的位置，是否前往開啟定位服務？</string>
+    <string name="permission_location_failure">您拒絕了定位請求。</string>
+    <string name="permission_location_setting">您禁止了App獲取當前位置權限，請前往權限頁面進行授權。</string>
+
+    <!-- Manifest.permission -->
+    <string name="permission_read_storage">App需要打開您的讀取文件權限</string>
+    <string name="permission_read_storage_failure">App需要打開您的讀取文件權限，請前往權限頁面進行授權。</string>
+    <string name="permission_write_storage">App需要打開您的存儲文件權限</string>
+    <string name="permission_write_storage_failure">App需要打開您的存儲文件權限，請前往權限頁面進行授權。</string>
+    <string name="permission_coarse_location">App需要打開您的網絡定位權限</string>
+    <string name="permission_coarse_location_failure">App需要打開您的網絡定位權限，請前往權限頁面進行授權。</string>
+    <string name="permission_fine_location">App需要打開您的GPS定位權限</string>
+    <string name="permission_fine_location_failure">App需要打開您的GPS定位權限，請前往權限頁面進行授權。</string>
+    <string name="permission_camera">App需要打開您的照相機</string>
+    <string name="permission_camera_failure">App需要打開您的照相機，請前往權限頁面進行授權。</string>
+    <string name="permission_read_calendar">App需要打開您的讀取日程權限</string>
+    <string name="permission_read_calendar_failure">App需要打開您的讀取日程權限，請前往權限頁面進行授權。</string>
+    <string name="permission_write_calendar">App需要打開您的寫入日程權限</string>
+    <string name="permission_write_calendar_failure">App需要打開您的寫入日程權限，請前往權限頁面進行授權。</string>
+    <string name="permission_record">App需要打開您的麥克風</string>
+    <string name="permission_record_failure">App需要打開您的麥克風，請前往權限頁面進行授權。</string>
+    <string name="permission_call_phone">App需要打開您的撥打電話權限</string>
+    <string name="permission_call_phone_failure">App需要打開您的撥打電話權限，請前往權限頁面進行授權。</string>
+    <string name="permission_other">App需要打開您的權限</string>
+    <string name="permission_other_failure">App需要打開您的權限，請前往權限頁面進行授權。</string>
+
+    <!-- Picker -->
+    <string name="picker_video">錄像</string>
+    <string name="picker_camera">拍照</string>
+    <string name="picker_album">從相冊選擇</string>
+    <string name="picker_cancel">取消</string>
+    <string name="picker_error_gif">長寬不小於 %1$dpx，且大小不超過 %2$sM。</string>
+    <string name="picker_compress_video">視頻壓縮處理中....</string>
+    <string name="picker_compress_video_fail">視頻壓縮失敗</string>
+
+    <string name="picker_permission_album">App需要讀取您的相冊</string>
+    <string name="picker_permission_album_failure">App需要讀取您的相冊，請前往權限頁面進行授權。</string>
+    <string name="picker_permission_camera">App需要打開您的照相機</string>
+    <string name="picker_permission_camera_failure">App需要打開您的照相機，請前往權限頁面進行授權。</string>
+
+    <!-- firebase -->
+    <string name="default_notification_channel_id">iam_channel</string>
+    <string name="default_notification_channel_name">IAM Service</string>
+
+</resources>

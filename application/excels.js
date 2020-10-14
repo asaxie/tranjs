@@ -7,6 +7,7 @@ export default class ExcelsUtils {
         const workbook = new Excel.Workbook();
         await workbook.xlsx.readFile(path);
 
+
         return new Promise((resolve, reject) => {
             let data = []
 
@@ -15,7 +16,16 @@ export default class ExcelsUtils {
                 worksheet.getSheetValues().map((item, index) => {
                     let list = {}
                     list.key = index
+                    let zh = item[2]
                     list.zh = item[2]
+                    if (zh && zh.richText && zh.richText.length > 0){
+                        let d = ""
+                        zh.richText.map((t,i)=>{
+                            d = d+t.text
+                        })
+                        list.zh = d
+                    }
+                    console.log("zh",list.zh)
                     list.zhNew = item[4]
                     list.en = item[5]
                     list.pt = item[6]

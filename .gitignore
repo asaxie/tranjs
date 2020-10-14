@@ -90,3 +90,5 @@ typings/
 .dynamodb/
 .idea
 
+/package-lock.json
+/yarn.lock

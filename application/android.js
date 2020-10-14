@@ -33,6 +33,9 @@ export default class AndroidUtils {
 
     static creatStringsXML(init, tran,name = "strings") {
 
+        // console.log("init",init)
+        // console.log("tran",tran)
+
         let keys = Object.keys(init)
 
         let inputEnRes = androidStart
