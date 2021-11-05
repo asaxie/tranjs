@@ -28,11 +28,11 @@ export default class AndroidUtils {
         }))
     }
 
-    static creatString(key, value){
+    static creatString(key, value) {
         return `    <string name=\"${key}\">${value}</string>\n`
     }
 
-    static creatStringsXML(init, tran,name = "strings") {
+    static creatStringsXML(init, tran, name = "strings") {
 
         // console.log("init",init)
         // console.log("tran",tran)
@@ -55,17 +55,17 @@ export default class AndroidUtils {
                 if (tran[t].zh == value) {
 
                     if (tran[t].zhNew) {
-                        inputZhRes += this.creatString(key,tran[t].zhNew)
-                    }else {
-                        inputZhRes += this.creatString(key,tran[t].zh)
+                        inputZhRes += this.creatString(key, tran[t].zhNew)
+                    } else {
+                        inputZhRes += this.creatString(key, tran[t].zh)
                     }
 
                     hasKeys.push(key)
 
 
-                    inputEnRes += this.creatString(key,StringUtils.formatDot(tran[t].en))
-                    inputPtRes += this.creatString(key,StringUtils.formatDot(tran[t].pt))
-                    inputZhHansRes += this.creatString(key,tran[t].zhHans)
+                    inputEnRes += this.creatString(key, StringUtils.formatDot(tran[t].en))
+                    inputPtRes += this.creatString(key, StringUtils.formatDot(tran[t].pt))
+                    inputZhHansRes += this.creatString(key, tran[t].zhHans)
                     break
                 }
             }
@@ -79,10 +79,10 @@ export default class AndroidUtils {
         //拼接未翻譯的
         keys.map((key, index) => {
             if (hasKeys.indexOf(key) == -1) {
-                inputEnRes += this.creatString(key,init[key])
-                inputPtRes += this.creatString(key,init[key])
-                inputZhRes += this.creatString(key,init[key])
-                inputZhHansRes += this.creatString(key,init[key])
+                inputEnRes += this.creatString(key, init[key])
+                inputPtRes += this.creatString(key, init[key])
+                inputZhRes += this.creatString(key, init[key])
+                inputZhHansRes += this.creatString(key, init[key])
             }
         })
 
