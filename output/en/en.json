@@ -1,6 +1,6 @@
 {
-    "yes": "Sim",
-    "no": "Não",
+    "yes": "Yes",
+    "no": "No",
     "enums": {
         "FILLING": "In progress",
         "APPROVING": "Under internal examination and verification",
@@ -109,7 +109,9 @@
         "applicationProgressSearch": "Check project progress"
     },
     "Aside": {
-        "title": "Project management",
+        "title": {
+            "projectManagement": "Project management"
+        },
         "IManageResearch": "Scientific research project management"
     },
     "Header": {
@@ -234,7 +236,8 @@
         "uploadFFailure": "上呈失敗",
         "valueRequired": "{value}:This value must be filled in.",
         "actionSuccess": "Operation success",
-        "getSuppleFilesFailure": "獲取補交文件失敗"
+        "getSuppleFilesFailure": "獲取補交文件失敗",
+        "fileTypeFailure": "File format does not meet the requirements. Please re-upload!"
     },
     "ApplicationProjectMain": {
         "finalSubmitTime": "Submission deadline for online and hard copy:",
@@ -310,12 +313,13 @@
         "MOPHONEInputError": "The mobile phone number format is   incorrect. It should be in 8 digits with 6 at the beginning!",
         "HKPHONEInputError": "Format of the mobile number is incorrect. It should be in 8 digits!",
         "CNPHONEInputError": "Format of the mobile number is incorrect. It should start with \"1\" with a total of 11digits!",
+        "EMAILInputError": "The Email format is incorrect!",
         "localinfo": "Local Principal Investigator's detail",
         "projectinfo": "Information of the principal investigator",
         "nameCn": "Name in Chinese",
         "nameEn": "Name in foreign language",
-        "identityType": "Identification document category",
-        "identityNo": "Identification document number",
+        "identityType": "ID type",
+        "identityNo": "身份證明編號",
         "gender": "Gender",
         "degree": "Highest education level",
         "organization": "Current organisation",
@@ -341,7 +345,7 @@
         "choseEstablishedDate": "选择日期",
         "registrationNo": "Business registration number",
         "registeredCapital": "Registered capital",
-        "employeeCount": "Number of Full-time Employees",
+        "employeeCount": "Headcount",
         "fromPairing": "Number of Full-time R&D Employees with Master's Degrees or above",
         "bachelorCount": "Number of full-time R&D personnel holding Bachelor degree or above",
         "qualityCertification": "Description of the quality system certification obtained by the enterprise",
@@ -487,7 +491,7 @@
     },
     "BlueCard": {
         "inputInfo": "Fill in the information of the Non-resident Worker's Identification Card (Blue Card)",
-        "cardNo": "Non-resident Worker's Identification Card (Blue Card) Number",
+        "cardNo": "外地僱員身份認別證（藍卡）號碼",
         "expiredDate": "Validity Period",
         "expiredDateTag": "選擇日期",
         "uploadCopy": "Upload a copy of the Non-resident Worker's Identification Card (Blue Card)",
@@ -507,5 +511,8 @@
         "title": "請選擇機構",
         "role": "Role in project",
         "selectUnit": "請選擇項目角色"
+    },
+    "date": {
+        "format": "YYYY-MM-DD"
     }
 }
