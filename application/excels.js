@@ -5,7 +5,11 @@ export default class ExcelsUtils {
     //去左右空格;
     static trim(s) {
         if (s) {
-            return s.replace(/(^\s*)|(\s*$)/g, "");
+            try {
+                return s.replace(/(^\s*)|(\s*$)/g, "");
+            } catch (error) {
+            }
+         
         }
         return s;
     }
@@ -41,11 +45,10 @@ export default class ExcelsUtils {
                         list.pt = this.trim(item[5])
                         list.en = this.trim(item[6])
 
-                        console.log(`list`,list)
 
 
                     } catch (err) {
-                        console.log(`error`, err)
+                        console.log(`readExcel error`, err)
                         console.log(`item[4]`, list)
 
                     }
