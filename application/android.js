@@ -18,8 +18,8 @@ export default class AndroidUtils {
                 } else {
                     let obj = {}
                     data.childs.map((item, index) => {
-                        if (item.attrib && item.attrib.name) {
-                            obj[item.attrib.name] = item.childs[0]
+                        if (item && item.attrib && item.attrib.name) {
+                            obj[item.attrib.name] = item.childs && item.childs[0]
                         }
                     })
                     resolve(obj)

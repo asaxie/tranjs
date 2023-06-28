@@ -95,3 +95,7 @@ typings/
 /yarn.lock
 .DS_Store
 .history
+.strings
+.xml
+.json
+.xlsx

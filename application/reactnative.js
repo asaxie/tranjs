@@ -1,5 +1,4 @@
 import zh from "../input/zh-hant"
-import not from "../input/NoT"
 import fs from "fs";
 import * as qs from "qs";
 
@@ -64,9 +63,9 @@ export default class ReactNativeUtils {
     static creatJSfile(init, tran) {
 
         let keys = Object.keys(init)
-        const inputPtRes = JSON.parse(JSON.stringify(zh));
-        const inputZhRes = JSON.parse(JSON.stringify(zh));
-        const inputEnRes = JSON.parse(JSON.stringify(zh));
+        let inputPtRes = JSON.parse(JSON.stringify(zh));
+        let inputZhRes = JSON.parse(JSON.stringify(zh));
+        let inputEnRes = JSON.parse(JSON.stringify(zh));
         let cc = {}
         let dd = []
 

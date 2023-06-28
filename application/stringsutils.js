@@ -5,4 +5,11 @@ export default class StringUtils {
             .replace(/”/g,"/”")
             .replace(/"/g,"/\"")
     }
+    static funcChina(obj) {
+
+        if (/.*[\u4e00-\u9fa5]+.*$/.test(obj)) {
+            return false;
+        }
+        return true;
+    }
 }
