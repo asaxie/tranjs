@@ -4,7 +4,7 @@
   "scripts": {
     "start": "babel-node index.js",
     "run": "node run",
-    "cli":"babel-node root.js"
+    "cli": "babel-node root.js"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -12,7 +12,8 @@
     "exceljs": "^4.1.1",
     "node-xml-lite": "^0.0.7",
     "qs": "^6.9.4",
-    "xlsx": "^0.16.7"
+    "xlsx": "^0.16.7",
+    "xmldom": "^0.6.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
