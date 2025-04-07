@@ -90,6 +90,8 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 .idea
+.output
+.input
 
 /package-lock.json
 /yarn.lock

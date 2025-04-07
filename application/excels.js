@@ -46,6 +46,7 @@ export default class ExcelsUtils {
                         list.pt = this.trim(item[5])
                         list.en = this.trim(item[6])
 
+                        console.log(`item[4]`, list.zhNew)
 
 
                     } catch (err) {

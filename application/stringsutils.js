@@ -1,9 +1,13 @@
 export default class StringUtils {
     static formatDot(string){
-        return string
+        if (string && string.replace) {
+            return string
             .replace(/“/g,"/“")
             .replace(/”/g,"/”")
             .replace(/"/g,"/\"")
+        }
+
+        return ''
     }
     static funcChina(obj) {
 
